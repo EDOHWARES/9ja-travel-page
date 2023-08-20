@@ -1,0 +1,164 @@
+footer {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.941), rgba(0, 128, 0, 0.464), rgba(0, 0, 0, 0.941)), url("/src/assets/footbg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container {
+    width: 80%;
+}
+
+form {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+form input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border: 2px solid white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+form label {
+    margin-right: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form button {
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: none;
+    border: none;
+    border: 2px solid white;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .foot {
+    background-color: white;
+    padding: 2rem;
+}
+
+.foot .pt--1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot .pt--1 p {
+    color: rgb(39, 38, 38);
+}
+
+.foot .pt--1 ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.foot .cont {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.foot .cont .foot--nav li {
+    font-size: .8rem;
+    color: gray;
+    display: flex;
+    align-items: center;
+    transition: all .4s;
+    gap: .3rem;
+}
+
+.foot .cont .foot--nav li:hover {
+    color: green;
+    cursor: pointer;
+    gap: 0;
+}
+
+.foot .cont .foot--nav {
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot .cont .foot--nav h3 {
+    font-size: .8rem;
+    text-align: center;
+    color: rgb(37, 37, 37);
+    font-weight: 100;
+}
+
+footer .copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+footer .copy small:last-child {
+    font-size: .7rem;
+}
+
+@media(max-width: 800px) {
+    .touch {
+        font-size: .6rem;
+        color: rgb(66, 66, 66);
+    }
+
+    form label {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    footer .container {
+        width: 90%;
+    }
+
+    form input {
+        padding: .5rem;
+        border-radius: 0;
+    }
+
+    form button {
+        padding: .5rem .9rem;
+        border-radius: 0;
+    }
+
+    form div {
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+    footer .copy {
+        flex-direction: column;
+    }
+
+
+}

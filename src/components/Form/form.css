@@ -1,0 +1,84 @@
+.signForm {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.761);
+    position: relative;
+}
+
+.signForm .cancel {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.signForm .cancel:hover {
+    transform: scale(.8);
+}
+
+.signForm .cont {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+    width: 80%;
+    max-width: 25rem;
+}
+
+.signForm .cont .div {
+    width: 100%;
+}
+
+.signForm .cont input {
+    background-color: rgb(214, 213, 213);
+    border-radius: 0;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+}
+
+.signForm .cont .icon {
+    font-size: 1.5rem;
+    background-color: gray;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.signForm .cont .icon:hover {
+    transform: scale(.9);
+}
+
+.signForm .cont select {
+    padding: 1rem;
+    width: 100%;
+    align-self: self-start;
+}
+
+.signForm button {
+    border-radius: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: ease-in .4s;
+}
+
+.signForm button:hover {
+    background-color: white;
+    border-color: green;
+    color: green;
+}
+
+@media(max-width: 800px) {
+    .signForm .cont .div {
+        flex-direction: row;
+    }
+
+    .signForm {
+        width: 100vw;
+        height: 100vh;
+    }
+}
